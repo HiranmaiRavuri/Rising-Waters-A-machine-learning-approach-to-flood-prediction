@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Predict Flood</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+<div class="container">
+<div class="card">
+
+<h1>Enter Environmental Details</h1>
+
+<form action="/data_predict" method="post">
+
+<input name="temp" placeholder="Temperature">
+<input name="Hum" placeholder="Humidity">
+<input name="db" placeholder="Cloud Cover">
+<input name="ap" placeholder="Annual Rainfall">
+<input name="aal" placeholder="Jan-Feb Rainfall">
+<input name="mar" placeholder="Mar-May Rainfall">
+<input name="jun" placeholder="Jun-Sep Rainfall">
+<input name="oct" placeholder="Oct-Dec Rainfall">
+
+<br>
+<button type="submit">Predict Flood Risk</button>
+
+</form>
+
+</div>
+</div>
+</body>
+</html>

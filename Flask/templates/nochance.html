@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flood Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h1 class="success">✔ No Severe Flood Risk</h1>
+
+        <div class="result">
+            Weather conditions indicate a low probability of flooding.
+            <br><br>
+            No immediate precautions required.
+        </div>
+
+        <a href="/predict">
+            <button>Check Again</button>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
