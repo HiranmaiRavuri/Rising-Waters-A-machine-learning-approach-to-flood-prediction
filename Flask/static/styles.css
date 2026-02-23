@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* center container */
+.container{
+    width:100%;
+    height:70%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* main card */
+.card{
+    background:white;
+    padding:50px;
+    border-radius:18px;
+    width:90%;
+    max-width:550px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,0.25);
+    animation:fade .6s ease;
+}
+
+/* headings */
+h1{
+    margin-bottom:20px;
+    color:#1e3c72;
+}
+
+/* inputs */
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+/* button */
+button{
+    margin-top:20px;
+    padding:14px 30px;
+    border:none;
+    border-radius:10px;
+    background:#2a5298;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1e3c72;
+    transform:translateY(-2px);
+}
+
+/* result text */
+.result{
+    font-size:20px;
+    margin:20px 0;
+    line-height:1.6;
+}
+
+/* success + danger */
+.success{
+    color:#16a34a;
+}
+
+.danger{
+    color:#dc2626;
+}
+
+/* animation */
+@keyframes fade{
+    from{opacity:0; transform:translateY(20px)}
+    to{opacity:1; transform:translateY(0)}
+}
